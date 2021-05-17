@@ -12,7 +12,6 @@ body{
 
 }
 
-
 .tableNews{
   background-image: url("../images/bwboat.jpg");
   background-repeat: no-repeat;
@@ -302,3 +301,6 @@ Expands an element to fit its container
   background-size: 100% 88%;
 }
 
+@media (max-width: 100px) {
+  
+}
