@@ -168,9 +168,11 @@ router.get("/showTable", async (req, res) => {
                 $gte: today,
             }
         });
+        const newspaper = await NewspaperModel.find({});
         res.render('pages/table', {
             output:tableData,
-            moment: moment
+            moment: moment,
+            newspaper: newspaper
         }); 
     } catch (err) {
         console.log(`ERROR : ${err}`);
