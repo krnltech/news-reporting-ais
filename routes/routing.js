@@ -363,6 +363,10 @@ router.post("/update/:id", upload, async (req, res) => {
     
 });
 
+router.get("/aboutAis",async(req,res) => {
+    res.render("pages/aboutAis");
+})
+
 //@route  -  DELETE /id
 router.get("/delete/:id", async (req, res) => {
     try {
