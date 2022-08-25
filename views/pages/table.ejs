@@ -1,4 +1,22 @@
 <%- include('../template/header') -%>
+<style>
+    .containerpadma{
+        border: 2px solid red; 
+        padding: 10px 10px 0px 10px; 
+        width:96%; 
+        margin-top: 4em;
+        margin-bottom: 4em;
+    }
+    @media only screen and (max-width: 600px) {
+        .containerpadma{
+            border: 2px solid red; 
+            padding: 10px 10px 0px 10px; 
+            width:93%; 
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }    
+    }
+</style>
 
 <body>
     <%- include('../template/navbar') -%>
@@ -6,7 +24,20 @@
     <div class="tableNews" style = "min-height: 100vh; height: auto;">
 
         <div class="container" style="background:rgb(255 255 255 / 60%); padding:44px">
-            <h1 class="text-center" style='padding-top:3em; color: darkcyan; font-family: nikoshFont; font-weight:bolder;'>আজকের সংবাদ</h1>
+            <a href="http://www.padmabridge.gov.bd/" target="_blank" title="
+            
+        
+            
+        
+    
+            ">
+                <div class="container containerpadma">        
+                    <div>
+                        <img src="http://ais.gov.bd/sites/default/files/files/padma_bridge_countdown/padmabanner.jpeg" alt="padmabanner" style="width: 100%;">
+                    </div>
+                </div>
+            </a>
+            <h1 class="text-center" style='padding-top:1em; color: darkcyan; font-family: nikoshFont; font-weight:bolder;'>আজকের সংবাদ</h1>
             <% if(output.length > 0) { %>
                 <div class="row">
                     <% output.forEach((entry) => { %>
