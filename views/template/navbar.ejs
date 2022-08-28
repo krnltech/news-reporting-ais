@@ -71,16 +71,7 @@
                   >আর্কাইভ</a
                 >
               </li>
-              <% if (locals.user) { %>
-              <li class="nav-item">
-                <a
-                  style="font-family: nikoshFont; font-weight: bolder"
-                  class="nav-link"
-                  href="/logout"
-                  >এডমিন লগআউট</a
-                >
-              </li>
-              <% } %>
+             
               <li class="nav-item">
                 <a
                   style="font-family: nikoshFont; font-weight: bolder"
@@ -97,6 +88,16 @@
                   >কিভাবে চালাবেন?</a
                 >
               </li>
+              <% if (locals.user) { %>
+                <li class="nav-item">
+                  <a
+                    style="font-family: nikoshFont; font-weight: bolder"
+                    class="nav-link"
+                    href="/logout"
+                    >এডমিন লগআউট</a
+                  >
+                </li>
+              <% } %>
             </ul>
           </div>
         </div>
